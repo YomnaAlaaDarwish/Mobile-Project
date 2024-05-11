@@ -16,4 +16,4 @@ Using RX Dart, develop a mobile application based on API integration with the fo
 6.2. Then view search results as a list of all restaurants/cafes that provides this product
 6.3. Change view of search results as map view for all restaurants/cafes that provides this product
 7. Select one of the search results: View the distance and directions between your current location and
-the selected restaurant/café
+the selected restaurant/café.
