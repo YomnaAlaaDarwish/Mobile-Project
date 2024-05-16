@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RestaurantController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +29,9 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::post('/signup', [AuthController::class, 'signup']);
 Route::post('/signup/check-email', [AuthController::class, 'checkEmail']);
 
+//Route::apiResource('restaurants', RestaurantController::class);
+
+// Define a GET route for listing all restaurants
+Route::get('/list', [RestaurantController::class, 'index']);
+// Define a POST route for creating a new restaurant
+Route::post('/store', [RestaurantController::class, 'store']);
