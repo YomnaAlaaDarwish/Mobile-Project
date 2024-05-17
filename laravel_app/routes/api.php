@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RestaurantController;
-
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ResProController;
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +37,8 @@ Route::get('/list', [RestaurantController::class, 'index']);
 Route::post('/store', [RestaurantController::class, 'store']);
 // Define a GET route for listing all products
 Route::get('/products', [ResProController::class, 'index']);
+// Define a GET route for listing all products
+Route::get('/productsss', [ProductController::class, 'index']);
+
+Route::get('/restaurants-by-product', [RestaurantController::class, 'getRestaurantsByProduct']);
+

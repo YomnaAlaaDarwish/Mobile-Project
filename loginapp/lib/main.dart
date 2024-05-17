@@ -7,7 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'screens/restaurant_bloc.dart';
 import 'screens/ListRestaurantsScreen.dart';
 import 'screens/ProductsScreen.dart';
-
+import 'screens/ProductListScreen.dart';
 import 'package:http/http.dart' as http;
 
 void main() {
@@ -47,10 +47,12 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      initialRoute: '/products', // Set this to the route of AddRestaurantScreen
+      initialRoute: '/ProductListScreen', // Set this to the route of AddRestaurantScreen
       //initialRoute: '/',
       routes: {
         '/': (context) => MainPage(),
+        //'/RestaurantListScreen': (context) => RestaurantListScreen(),
+        '/ProductListScreen': (context) => ProductListScreen(),
         '/products': (context) => ProductsScreen(),
         '/profile': (context) => ProfileScreen(),
         '/signup': (context) => SignupPage(),
